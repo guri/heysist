@@ -1,3 +1,7 @@
+a {
+	cursor: pointer; /* for desktops */
+}
+
 table {
 	border-collapse: collapse;
 }
