@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/get_help.css">
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
 </head>
 <body id="get_help">
 
@@ -14,12 +19,12 @@
 	<h2>I need…</h2>
 	<ul>
 		<li>
-			<input type="checkbox" name="need" value="food">
-			<label>Food</label>
+			<input type="checkbox" name="need" id="need-food" value="food">
+			<label for="need-food">Food</label>
 		</li>
 		<li>
-			<input type="checkbox" name="need" value="shelter">
-			<label>Shelter</label>
+			<input type="checkbox" name="need" id="need-shelter" value="shelter">
+			<label for="need-shelter">Shelter</label>
 		</li>
 	</ul>
 	
@@ -27,14 +32,14 @@
 	<input type="text">
 	
 	<h2>How Urgent?</h2>
-	<input type="radio" name="urgency" value="urgent">
-	<label>Very!</label>
+	<input type="radio" name="urgency" id="urgency-high" value="urgent">
+	<label for="urgency-high">Very!</label>
 	
-	<input type="radio" name="urgency" value="normal">
-	<label>Normal</label>
+	<input type="radio" name="urgency" id="urgency-normal" value="normal">
+	<label for="urgency-normal">Normal</label>
 	
-	<input type="radio" name="urgency" value="low">
-	<label>Low</label>
+	<input type="radio" name="urgency" id="urgency-low" value="low">
+	<label for="urgency-low">Low</label>
 	
 	<input type="submit" value="Help!">
 	

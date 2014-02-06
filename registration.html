@@ -6,6 +6,11 @@
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/registration.css">
 	<meta name="viewport" content="width=device-width, user-scalable=yes">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+
 </head>
 <body id="registration">
 
@@ -29,37 +34,37 @@
 	<h2>I usually need...</h2>
 	<ul>
 		<li>
-			<input type="checkbox" name="needs" value="moving">
-			<label>Assistance moving outside</label>
+			<input type="checkbox" name="needs" id="needs-moving" value="moving">
+			<label for="needs-moving">Assistance moving outside</label>
 		</li>
 		<li>
-			<input type="checkbox" name="needs" value="food">
-			<label>Food in time of disaster</label>
+			<input type="checkbox" name="needs" id="needs-food" value="food">
+			<label for="needs-food">Food in time of disaster</label>
 		</li>
 		<li>
-			<input type="checkbox" name="needs" value="other[0]">
-			<label>Other:</label>
+			<input type="checkbox" name="needs" id="needs-other" value="other[0]">
+			<label for="needs-other">Other:</label>
 			<input type="text" name="other[0]">
 		</li>
 	</ul>
 
 	<h2>I can usually…</h2>	
 	<ul>
-		<li>	
-			<input type="checkbox" name="abilities" value="physical">
-			<label>Help someone down the stairs</label>
+		<li>
+			<input type="checkbox" name="abilities" id="abitilies-physical" value="physical">
+			<label for="abitilies-physical">Help someone down the stairs</label>
 		</li>
 		<li>	
-			<input type="checkbox" name="abilities" value="groceries">
-			<label>Bring someone groceries</label>
+			<input type="checkbox" name="abilities" id="abilities-groceries" value="groceries">
+			<label for="abilities-groceries">Bring someone groceries</label>
 		</li>
 		<li>	
-			<input type="checkbox" name="abilities" value="shelter">
-			<label>Host people in my shelter</label>
+			<input type="checkbox" name="abilities" id="abilities-shelter" value="shelter">
+			<label for="abilities-shelter">Host people in my shelter</label>
 		</li>	
 		<li>
-			<input type="checkbox" name="needs" value="other[0]">
-			<label>Other:</label>
+			<input type="checkbox" name="needs" id="other[0]" value="other[0]">
+			<label for="other[0]">Other:</label>
 			<input type="text" name="other[0]">
 		</li>
 	</ul>
