@@ -15,11 +15,11 @@
 <body id="registration">
 
 <h1>Registration</h1>
-<form action="">
+<form action="" id="registration_form">
 	<fieldset id="general">
 		<div>
-			<label for="username">Username</label>
-			<input type="text" id="username" name="username">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name">
 		</div>
 		<div>
 			<label for="location">Location (Home)</label>
@@ -34,45 +34,49 @@
 	<h2>I usually need...</h2>
 	<ul>
 		<li>
-			<input type="checkbox" name="needs" id="needs-moving" value="moving">
+			<input type="checkbox" name="needs-moving" id="needs-moving">
 			<label for="needs-moving">Assistance moving outside</label>
 		</li>
 		<li>
-			<input type="checkbox" name="needs" id="needs-food" value="food">
+			<input type="checkbox" name="needs-food" id="needs-food">
 			<label for="needs-food">Food in time of disaster</label>
 		</li>
 		<li>
-			<input type="checkbox" name="needs" id="needs-other" value="other[0]">
 			<label for="needs-other">Other:</label>
-			<input type="text" name="other[0]">
+			<input type="text" name="needs-other">
 		</li>
 	</ul>
 
 	<h2>I can usually…</h2>	
 	<ul>
 		<li>
-			<input type="checkbox" name="abilities" id="abitilies-physical" value="physical">
+			<input type="checkbox" name="abilities-physical" id="abitilies-physical">
 			<label for="abitilies-physical">Help someone down the stairs</label>
 		</li>
 		<li>	
-			<input type="checkbox" name="abilities" id="abilities-groceries" value="groceries">
+			<input type="checkbox" name="abilities-groceries" id="abilities-groceries">
 			<label for="abilities-groceries">Bring someone groceries</label>
 		</li>
 		<li>	
-			<input type="checkbox" name="abilities" id="abilities-shelter" value="shelter">
+			<input type="checkbox" name="abilities-shelter" id="abilities-shelter">
 			<label for="abilities-shelter">Host people in my shelter</label>
 		</li>	
 		<li>
-			<input type="checkbox" name="needs" id="other[0]" value="other[0]">
-			<label for="other[0]">Other:</label>
-			<input type="text" name="other[0]">
+			<label for="abilities-other">Other:</label>
+			<input type="text" name="abilities-other">
 		</li>
 	</ul>
 	
 	
-	<input type="submit">
+	<input type="submit" value="Register!">
 	
 </form>
+
+<script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.3/firebase.js'></script>
+<script type='text/javascript' src='scripts/db-operations.js'></script>
+<script src="scripts/common.js"></script>
+
+
 
 </body>
 </html>
