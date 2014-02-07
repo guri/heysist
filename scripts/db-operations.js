@@ -67,7 +67,8 @@
 				var msg = 'Help! ' + needs.user.name + ' from ' + needs.location + ' needs help with ' + need + '.';
 				$('.helper_status').text(msg);
 				$('.helper_status').append(
-					$('<a>').text('help?')
+					$('<a>')
+						.text('help?')
 				);
 			}
 		})
