@@ -12,30 +12,30 @@
 	<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
 
 </head>
-<body id="get_help">
+<body>
 
 <h1>Ask for Assistance</h1>
-<form>
+<form id="get_help">
 	<h2>I need…</h2>
 	<ul>
 		<li>
-			<input type="checkbox" name="need" id="need-food" value="food">
-			<label for="need-food">Food</label>
+			<input type="checkbox" name="food" id="food">
+			<label for="food">Food</label>
 		</li>
 		<li>
-			<input type="checkbox" name="need" id="need-shelter" value="shelter">
-			<label for="need-shelter">Shelter</label>
+			<input type="checkbox" name="shelter" id="shelter">
+			<label for="shelter">Shelter</label>
 		</li>
 	</ul>
 	
 	<h2>Where?</h2>
-	<input type="text">
+	<input type="text" id="location" name="location">
 	
 	<h2>How Urgent?</h2>
 	<input type="radio" name="urgency" id="urgency-high" value="urgent">
 	<label for="urgency-high">Very!</label>
 	
-	<input type="radio" name="urgency" id="urgency-normal" value="normal">
+	<input type="radio" name="urgency" id="urgency-normal" value="normal" selected>
 	<label for="urgency-normal">Normal</label>
 	
 	<input type="radio" name="urgency" id="urgency-low" value="low">

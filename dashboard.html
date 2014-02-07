@@ -17,17 +17,15 @@
 <h1>Heyssist</h1>
 
 <!-- if they're a helper -->
-<p class="helper_status">Waiting for help calls...</p>
+<p class="helper_status"></p>
 
 <!-- if they're a helper & helped at least 1 person -->
-<p class="helper_count">You've helped 1 times!</p>
+<p class="helper_count">You've helped <span class="help_count">0</span> times!</p>
 
-<form>
-	<button id="get_help">Get Help</button>
-	<button id="change_status">Change Status</button>
-	<button id="change_availability">Change Availability</button>
-	<button id="contact">Contact the Team</button>
-</form>
+<a data-role="button" href="get_help.html" id="get_help">Get Help</a>
+<a data-role="button" href="registration.html" id="change_status">Change Settings</a>
+<a data-role="button" id="change_availability">Change Availability</a>
+<a data-role="button" id="contact">Contact the Team</a>
 
 <div id="status"></div>
 

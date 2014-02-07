@@ -1,4 +1,4 @@
-$(document).ready(function() {
+//$(document).ready(function() {
 	
 	/* Title */
 	$('[data-role="page"]').prepend(
@@ -25,6 +25,18 @@ $(document).ready(function() {
 	
 	/* ACTIONS */
 	
+	function hs_redirect(where) {
+		switch (where) {
+			case ('dashboard'):
+				$.mobile.changePage('dashboard.html');
+				break;
+			default:
+				$.mobile.changePage('dashboard.html');
+				break;
+
+		}
+	}
+	
 	$('#registration_form').submit(function(){
 		var form = $(this);
 		var user = {};
@@ -47,6 +59,25 @@ $(document).ready(function() {
 		return false;
 	});
 	
+	$('#dashboard #change_availability').click(function(){
+		var user = curr_user.get();
+		new_status = (user.status !== true) ? true : false;
+		curr_user.set('status', new_status);
+		curr_user.updateData();
+	});
+	
+	$('form#get_help').submit(function(){
+		var need = {};
+		var form = $(this);
+		$.each(['location'], function(n, key) {
+			need[key] = form.find('#'+key).val();
+		});
+		form.find(':checked').each(function(n, obj){
+			var key = $(obj).attr('name');
+			need[key] = true;
+		})
+		submitNeed(need);
+	});
 	
 
-})
+//});
